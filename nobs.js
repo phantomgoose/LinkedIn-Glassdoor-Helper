@@ -127,7 +127,7 @@ function formatRating(rating) {
   } else {
     color = "red";
   }
-  return `<span style='border-bottom:thick solid ${color};1px;'>${
+  return `<span style='border-bottom:thick solid ${color};'>${
     rating
   }</span>`;
 }

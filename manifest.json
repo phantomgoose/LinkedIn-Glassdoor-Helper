@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "NoCrappyJobs",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/jobs/"],
+      "js": ["jquery-3.2.1.min.js", "secrets.js", "nobs.js"]
+    }
+  ],
+  "permissions": ["tabs", "*://www.linkedin.com/jobs/", "https://api.glassdoor.com/api/"]
+}
